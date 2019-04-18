@@ -29,20 +29,22 @@ const showPlan = ShowPlanParser.Parse(showPlanXml);
 
 ShowPlan-Vue uses CSS variables for its styling. 
 
-``` css
---background: #fff;
---foreground: rgba(0, 0, 0, 0.8);
---alt-background: #F1F1EF;
---border: rgba(0,0,0,.25);
---alt-border: rgba(0,0,0,.2);
---red: #A71D5D;
---blue: #183691;
---green: #63a35c;
---grey: #969896;
---brown: #75715E;
---orange: #df5000;
---purple: #795da3;
---light-blue: #445588;
+```sass
+body{
+  --background: #fff;
+  --foreground: rgba(0, 0, 0, 0.8);
+  --alt-background: #F1F1EF;
+  --border: rgba(0,0,0,.25);
+  --alt-border: rgba(0,0,0,.2);
+  --red: #A71D5D;
+  --blue: #183691;
+  --green: #63a35c;
+  --grey: #969896;
+  --brown: #75715E;
+  --orange: #df5000;
+  --purple: #795da3;
+  --light-blue: #445588;
+}
 ```
 
 ## Contributing
