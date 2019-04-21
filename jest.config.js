@@ -16,10 +16,10 @@ module.exports = {
     testURL: 'http://localhost/',
     globals: {
         'ts-jest': {
-            tsConfig: 'tsConfig.jest.json',
+            tsConfig: 'tsconfig.jest.json',
         },
         'vue-jest': {
-            tsConfig: 'tsConfig.jest.json',
+            tsConfig: 'tsconfig.jest.json',
         },
     },
 };
