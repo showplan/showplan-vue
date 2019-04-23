@@ -179,6 +179,23 @@ export default class Statement extends Vue {
     }
 
     public mounted() {
+        this.setDefaultStatement();
+        if (this.statement !== undefined) {
+            this.buildMap(this.statement);
+        }
+    }
+
+    @Watch('showPlan')
+    private OnShowPlanChanged() {
+        this.setDefaultStatement();
+    }
+
+    @Watch('statement')
+    private OnStatementChanged(val: BaseStmtInfo) {
+        this.buildMap(val);
+    }
+
+    private setDefaultStatement(): void {
         const statements = this.showPlan.Batches
             .map(i => i.Statements)
             .reduce((flat, i) => flat.concat(i));
@@ -194,13 +211,6 @@ export default class Statement extends Vue {
                 throw Error('Could not find statement in query plan');
             }
         }
-
-        this.buildMap(this.statement);
-    }
-
-    @Watch('statement')
-    private OnStatementChanged(val: BaseStmtInfo) {
-        this.buildMap(val);
     }
 
     private buildMap(val: BaseStmtInfo) {
