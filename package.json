@@ -1,6 +1,6 @@
 {
   "name": "showplan-vue",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/showplan-vue.js",
   "module": "dist/showplan-vue.es.js",
   "files": [
