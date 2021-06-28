@@ -35,7 +35,7 @@
     "guid-typescript": "^1.0.9",
     "normalize.css": "^8.0.1",
     "numbro": "2.1.1",
-    "prismjs": "^1.16.0",
+    "prismjs": "^1.24.0",
     "showplan-js": "^1.0.1",
     "vue": "^2.6.10",
     "vue-class-component": "^7.1.0",
